@@ -67,17 +67,20 @@ student["country"] = "Nigeria" # add item in dictionary
 #     print(key, ":", value)
 
 #Nested Dictionaries
-students = {
-    "student1": {
-        "name": "John",
-        "age": 20
-    },
-    "student2": {
-        "name": "Mary",
-        "age": 19
-    }
-}
+# students = {
+#     "student1": {
+#         "name": "John",
+#         "age": 20
+#     },
+#     "student2": {
+#         "name": "Mary",
+#         "age": 19
+#     }
+# }
+#
+# print(students)
+# print(students["student1"]["name"])
+# print(students["student2"]["age"])
 
-print(students)
-print(students["student1"]["name"])
-print(students["student2"]["age"])
+#.get() method
+print(student.get("school", "Not available"))

@@ -83,4 +83,14 @@ student["country"] = "Nigeria" # add item in dictionary
 # print(students["student2"]["age"])
 
 #.get() method
-print(student.get("school", "Not available"))
+#print(student.get("school", "Not available"))
+
+#.update() method
+print(student)
+student.update({
+    "name": "Immortal One",
+    "age": "???",
+    "country": "Unknown???",
+    "level" : 999
+})
+print(student)

@@ -70,3 +70,65 @@
 #
 # print("Apple" not in fruits)
 # print("apple" not in fruits)
+
+# union of sets
+# boys = {"John", "David", "Mike"}
+# girls = {"Mary", "Jane", "Sarah"}
+#
+# together = boys.union(girls)
+# print(together)
+
+# python_students = {"John", "Mary", "David"}
+# java_students = {"David", "Sarah", "John"}
+
+# all_students = python_students.union(java_students)
+#
+# print("Python students:", python_students)
+# print("Java students:", java_students)
+# print("All students:", all_students)
+# all_students = python_students | java_students
+#
+# print(all_students)
+
+# intersection of sets
+# python_students = {"John", "Mary", "David"}
+# java_students = {"David", "Sarah", "John"}
+#
+# common = python_students.intersection(java_students)
+#
+# print(common)
+
+# boys = {"John", "David", "Mike", "Chris"}
+# football_players = {"Mike", "Chris", "Sarah"}
+#
+# football_boys = boys.intersection(football_players)
+#
+# print("Boys:", boys)
+# print("Football players:", football_players)
+# print("Boys who play football:", football_boys)
+
+# difference in sets
+# A = {1, 2, 3, 4}
+# B = {3, 4, 5, 6}
+#
+# result = A.difference(B)
+#
+# print(result)
+# print(A - B)
+# print(A - B - result)
+
+# python_students = {"John", "Mary", "David", "Peter"}
+# java_students = {"David", "Peter", "Sarah"}
+#
+# result = python_students.difference(java_students)
+#
+# print(result)
+
+# symmetric difference in sets
+# A = {1, 2, 3, 4}
+# B = {3, 4, 5, 6}
+#
+# result = A.symmetric_difference(B)
+#
+# print(result)
+# print(A ^ B)

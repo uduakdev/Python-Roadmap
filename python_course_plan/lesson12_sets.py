@@ -132,3 +132,21 @@
 #
 # print(result)
 # print(A ^ B)
+
+# .clear() method in sets
+# fruits = {"Apple", "Banana", "Mango"}
+#
+# fruits.clear()
+#
+# print(fruits)
+
+# .copy() method in sets
+fruits = {"Apple", "Banana", "Mango"}
+
+new_fruits = fruits.copy()
+
+print(new_fruits)
+
+new_fruits.add("Orange")
+print(new_fruits)
+print(fruits)

@@ -114,10 +114,63 @@
 # student_info("Uduakabasi")
 # student_info("John", "Computer Science")
 
-def welcome(name, country="Nigeria"):
-    print("Welcome", name)
-    print("Country:", country)
+# def welcome(name, country="Nigeria"):
+#     print("Welcome", name)
+#     print("Country:", country)
+#
+# welcome("Uduakabasi")
+# welcome("Eternal", "Heaven")
+# welcome("Angel")
 
-welcome("Uduakabasi")
-welcome("Eternal", "Heaven")
-welcome("Angel")
+# keyword arguments in functions
+# def introduce(name, age):
+#     print("Name:", name)
+#     print("Age:", age)
+#
+# introduce(age=20, name="David")
+
+# def student(name, age, course):
+#     print("Name:", name)
+#     print("Age:", age)
+#     print("Course:", course)
+#
+# student(course="Software Engineering", name="Uduakabasi", age = 17)
+
+# mixing positional and keyword arguments
+# def student(name, age, course):
+#     print("Name:", name)
+#     print("Age:", age)
+#     print("Course:", course)
+#
+# student("Angel", course="Medicine and Surgery", age=18)
+
+# *args in functions
+# def add_numbers(*args):
+#     print(args)
+#
+# add_numbers(2, 4)
+# add_numbers(2, 4, 6)
+# add_numbers(1, 2, 3, 4, 5)
+
+# def show_items(*args):
+#     print(args)
+#     print(len(args))
+#
+# show_items("apple", "banana", "orange")
+
+# def show_students(*students):
+#     for student in students:
+#         print(student)
+#
+# show_students("Uduakabasi", "Michael", "Emmanuel", "Fountain")
+# show_students("Angel", "Peace")
+# show_students("Victory")
+
+def add_numbers(*numbers):
+    total = 0
+    for number in numbers:
+        total += number
+    return total
+
+print(add_numbers(2,4,6))
+print(add_numbers(10,20,30,40))

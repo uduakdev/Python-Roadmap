@@ -69,12 +69,55 @@
 #
 # print(answer)
 
-def add(a, b):
-    return a + b
-
-x = add(5, 10)
-y = add(x, 20)
-
-print(y)
+# def add(a, b):
+#     return a + b
+#
+# x = add(5, 10)
+# y = add(x, 20)
+#
+# print(y)
 
 # print() displays a value. return gives a value back to the caller.
+
+# default arguments in functions
+# def greet(name= "Student"):
+#     print("Hello", name)
+#
+# greet("Uduakabasi")
+# greet()
+# greet(6)
+
+# def introduce(name="Student"):
+#     print("My name is", name)
+#
+# introduce("Uduakabasi")
+# introduce()
+
+# default arguments with normal parameters
+# def power(number, exponent=2):
+#     return number ** exponent
+#
+# print(power(5))
+# print(power(5, 3))
+
+# def introduce(name, country="Nigeria"):
+#     print("My name is", name)
+#     print("I am from", country)
+#
+# introduce("Uduakabasi")
+# introduce("Eternal", "Heaven")
+
+# def student_info(name, course="Software Engineering"):
+#     print("Name:", name)
+#     print("Course:", course)
+#
+# student_info("Uduakabasi")
+# student_info("John", "Computer Science")
+
+def welcome(name, country="Nigeria"):
+    print("Welcome", name)
+    print("Country:", country)
+
+welcome("Uduakabasi")
+welcome("Eternal", "Heaven")
+welcome("Angel")

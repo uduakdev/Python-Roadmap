@@ -166,11 +166,46 @@
 # show_students("Angel", "Peace")
 # show_students("Victory")
 
-def add_numbers(*numbers):
-    total = 0
-    for number in numbers:
-        total += number
-    return total
+# def add_numbers(*numbers):
+#     total = 0
+#     for number in numbers:
+#         total += number
+#     return total
+#
+# print(add_numbers(2,4,6))
+# print(add_numbers(10,20,30,40))
 
-print(add_numbers(2,4,6))
-print(add_numbers(10,20,30,40))
+# **kwargs in functions
+# def student_info(**kwargs):
+#     print(kwargs)
+#     print(type(kwargs))
+#
+# student_info(name="Uduakabasi", age=17, course="Software Engineering")
+
+# looping through
+# def show_info(**kwargs):
+#     for key, value in kwargs.items():
+#         print(key, ":", value)
+#
+# show_info(name="Angel", age=18, course="Medicine")
+
+# def student_info(**kwargs):
+#     for key, value in kwargs.items():
+#         print(f"{key}: {value}")
+#
+# student_info(
+#     name="Uduakabasi",
+#     age=17,
+#     course="Software Engineering",
+#     country="Nigeria"
+# )
+
+def profile(**kwargs):
+    for key, value in kwargs.items():
+        print(f"{key} : {value}")
+
+profile(
+    name="Uduakabasi",
+    age=17,
+    course="Software Engineering"
+)

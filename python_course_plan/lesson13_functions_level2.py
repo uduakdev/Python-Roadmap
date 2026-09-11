@@ -200,12 +200,52 @@
 #     country="Nigeria"
 # )
 
-def profile(**kwargs):
-    for key, value in kwargs.items():
-        print(f"{key} : {value}")
+# def profile(**kwargs):
+#     for key, value in kwargs.items():
+#         print(f"{key} : {value}")
+#
+# profile(
+#     name="Uduakabasi",
+#     age=17,
+#     course="Software Engineering"
+# )
 
-profile(
-    name="Uduakabasi",
-    age=17,
-    course="Software Engineering"
-)
+# variable scope in functions
+# local variable
+# name = "Uduakabasi"
+#
+# def greet():
+#     message = "Hello"
+#     print(message)
+#
+# greet()
+
+# global variables
+# name = "Uduakabasi"
+#
+# def greet():
+#     print(name)
+#
+# greet()
+
+# changing a global variable
+# name = "Uduakabasi"
+#
+# def change_name():
+#     global name
+#     name = "David"
+#     print(name)
+#
+# change_name()
+#
+# print(name)
+
+score = 10
+
+def increase_score():
+    global score
+    score = score + 5
+
+increase_score()
+
+print(score)

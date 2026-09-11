@@ -240,12 +240,66 @@
 #
 # print(name)
 
-score = 10
+# score = 10
+#
+# def increase_score():
+#     global score
+#     score = score + 5
+#
+# increase_score()
+#
+# print(score)
 
-def increase_score():
-    global score
-    score = score + 5
 
-increase_score()
+# error handling
+# try and except
+# try:
+#     age = int(input("Enter your age: "))
+#     print(age)
+# except:
+#     print("Please enter a valid number.")
 
-print(score)
+# specific exceptions
+# try:
+#     age = int(input("Enter your age: "))
+#     print(age)
+# except ValueError:
+#     print("Please enter a valid number.")
+
+# try:
+#     number = int(input("Enter a number: "))
+#     result = 10 / number
+#     print(result)
+#
+# except ValueError:
+#     print("That's not a valid number.")
+#
+# except ZeroDivisionError:
+#     print("You cannot divide by zero.")
+
+# else with try/except
+# try:
+#     number = int(input("Enter a number: "))
+# except ValueError:
+#     print("Invalid number!")
+# else:
+#     print("You entered:", number)
+
+# try:
+#     number = int(input("Enter a number: "))
+#     result = 100 / number
+# except ValueError:
+#     print("Invalid number!")
+# except ZeroDivisionError:
+#     print("Cannot divide by zero!")
+# else:
+#     print("Result:", result)
+
+# finally in error handling(finally is used when you want some code to run no matter what happens.)
+try:
+    number = int(input("Enter a number: "))
+    print(number)
+except ValueError:
+    print("Invalid number!")
+finally:
+    print("Program finished.")
